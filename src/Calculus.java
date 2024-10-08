@@ -11,4 +11,8 @@ public class Calculus {
         return 2 * (predictedOutput - expectedOutput);
     }
 
+    public static double ReluDerivative(double x) {
+        return x >= 0 ? 1 : 0;
+    }
+
 }

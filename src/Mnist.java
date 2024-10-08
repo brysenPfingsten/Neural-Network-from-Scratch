@@ -24,8 +24,8 @@ public class Mnist {
             int numImages = dis.readInt();
             int numRows = dis.readInt();
             int numCols = dis.readInt();
-            images = new int[2][numRows][numCols];
-            for (int i = 0; i < 2; i++) { //numImages
+            images = new int[numImages][numRows][numCols];
+            for (int i = 0; i < numImages; i++) { //numImages
                 for (int r = 0; r < numRows; r++) {
                     for (int c = 0; c < numCols; c++) {
                         images[i][r][c] = dis.readUnsignedByte();
